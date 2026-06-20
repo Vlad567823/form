@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "homepage": "https://{Vlad567823}.github.io/{form}/",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "homepage": "https://Vlad567823.github.io/form/",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
