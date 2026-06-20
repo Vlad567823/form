@@ -1,3 +1,4 @@
+import css from "./ContactForm.module.css";
 import { useState } from "react";
 
 export default function ContactForm({ onAddContact }) {
@@ -14,10 +15,11 @@ export default function ContactForm({ onAddContact }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form className={css.form} onSubmit={handleSubmit}>
+      <label className={css.label}>
         Name
         <input
+          className={css.input}
           type="text"
           name="name"
           value={name}
@@ -28,9 +30,10 @@ export default function ContactForm({ onAddContact }) {
         />
       </label>
 
-      <label>
+      <label className={css.label}>
         Number
         <input
+          className={css.input}
           type="tel"
           name="number"
           value={number}
@@ -41,7 +44,9 @@ export default function ContactForm({ onAddContact }) {
         />
       </label>
 
-      <button type="submit">Add contact</button>
+      <button className={css.button} type="submit">
+        Add contact
+      </button>
     </form>
   );
 }

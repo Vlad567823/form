@@ -1,0 +1,24 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* центрує текст і інпут */
+  gap: 8px;
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input {
+  width: 300px;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 5px rgba(79, 70, 229, 0.3);
+}
