@@ -8,7 +8,6 @@ const STORAGE_KEY = "contacts";
 export default function App() {
   const [contacts, setContacts] = useState([]);
 
-  // Завантаження контактів при першому рендері
   useEffect(() => {
     const savedContacts = localStorage.getItem(STORAGE_KEY);
 
@@ -17,7 +16,6 @@ export default function App() {
     }
   }, []);
 
-  // Збереження контактів при кожній зміні
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(contacts));
   }, [contacts]);
